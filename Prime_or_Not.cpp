@@ -10,7 +10,7 @@ int main()
 	
 	if(a==0 || a==1)
 	{
-		prime = true;
+		prime = false;
 	}
 	for(int i=2; i*i<=a; i++)
 	{
