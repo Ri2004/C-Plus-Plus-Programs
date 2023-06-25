@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	int num,num1,i=0,arr[200],j;
-	cout<<"Enter A Number"<<endl;
+	cout<<"Enter A Decimal Number"<<endl;
 	cin>>num;
 	
 	cout<<"Equivalent Binary Number is:"<<endl;
