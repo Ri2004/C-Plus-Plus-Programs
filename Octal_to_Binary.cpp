@@ -4,7 +4,7 @@
 using namespace std;
 void dectobinary(int n)
 {
-	int bin,i=0,ar[50],s,j;
+	int bin,i=0,ar[50],j;
 	
 	while(n>0)
 	{
@@ -20,7 +20,7 @@ void dectobinary(int n)
 }
 int main()
 {
-	int oct,bin,dec=0,rem,i=0;
+	int oct,dec=0,rem,i=0;
 	cout<<"Enter Octal Value"<<endl;
 	cin>>oct;
 	
