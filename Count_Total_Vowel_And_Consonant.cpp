@@ -20,7 +20,7 @@ int main()
         {
             ++vowels;
         }
-        else if(line[i]>='0' && line[i]<='9')
+        else if(line[i]>=48 && line[i]<=57)
         {
             ++digits;
         }
