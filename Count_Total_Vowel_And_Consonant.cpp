@@ -1,24 +1,43 @@
-//Count Total Number of voowels and consonants in a given string
-#include<iostream>
-#include<cstring>
+//Count Total Number of voowels, consonants, digits and white spaces in a given string
+#include <iostream>
 using namespace std;
+
 int main()
 {
-	char ch[200];
-	int len, vowel=0, consonant=0,i;
-	
-	cout<<"Enter A String"<<endl;
-	cin>>ch;
-	
-	len = strlen(ch);
-	
-	for(i=0; i<len; i++)
-	{
-		if(ch[i]=='a'||ch[i]=='e'||ch[i]=='i'||ch[i]=='o'||ch[i]=='u')
-			vowel++;
-		else
-			consonant++;
-	}
-	cout<<"Total Number of Vowels are: "<<vowel<<endl;
-	cout<<"Total Number of Consonants are: "<<consonant<<endl;
+    char line[150];
+    int vowels, consonants, digits, spaces;
+
+    vowels =  consonants = digits = spaces = 0;
+
+    cout << "Enter a line of string: ";
+    cin.getline(line, 150);
+    for(int i = 0; line[i]!='\0'; ++i)
+    {
+        if(line[i]=='a' || line[i]=='e' || line[i]=='i' ||
+           line[i]=='o' || line[i]=='u' || line[i]=='A' ||
+           line[i]=='E' || line[i]=='I' || line[i]=='O' ||
+           line[i]=='U')
+        {
+            ++vowels;
+        }
+        else if(line[i]>='0' && line[i]<='9')
+        {
+            ++digits;
+        }
+        else if (line[i]==' ')
+        {
+            ++spaces;
+        }
+        else
+        {
+            ++consonants;
+        }
+    }
+
+    cout << "Vowels: " << vowels << endl;
+    cout << "Consonants: " << consonants << endl;
+    cout << "Digits: " << digits << endl;
+    cout << "White spaces: " << spaces << endl;
+
+    return 0;
 }
