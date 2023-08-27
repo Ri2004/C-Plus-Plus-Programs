@@ -11,18 +11,18 @@ int main()
 	
 	temp = a;
 	
-	while(a>0)
+	while(temp>0)
 	{
-		b = a%10;
+		b = temp%10;
 		reverse = reverse *10 +b;
-		a = a/10;
+		temp = temp/10;
 	}
-	if(temp == reverse)
+	if(a == reverse)
 	{
-		cout<<temp<<" is a Palindrome Number";
+		cout<<a<<" is a Palindrome Number";
 	}
 	else
 	{
-		cout<<temp<<" is not a Palindrome Number";
+		cout<<a<<" is not a Palindrome Number";
 	}
 }
